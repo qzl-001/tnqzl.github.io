@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>齐泽龙</h1>
+		<h2>齐泽龙</h2>
+		<p>段落标签</p>
+		换行标签<br/>
+		<strong>加粗标签</strong>
+		<b>加粗标签</b>
+		<em>斜倾标签</em>
+		<i>斜倾标签</i>
+		<del>删除线</del>
+		<s>删除线</s>
+		<ins>下划线</ins>
+		<u>下划线</u> 
+		
+		这两个都是用来网页布局的
+		<div>一个盒子标签   一人独占一行</div>
+		<span>span表示跨行</span>
+		
+		<h4>图像标签</h4>
+		<img src="img.jpg" title="齐泽龙" width="300" height="300" border="15"/>   
+		alt为替换文本
+		title为提示文本
+		width(设置图像的宽度)
+		height(设置图像的高度)
+		border(设置图像的边框粗细)
+		图片的查找(下级用/)
+		图片的查找(上级用../)
+		也可以直接使用“绝对路径”<br/>
+		
+		
+		
+		<a href="跳转目标" target="目标窗口的弹出方式">超链接标签</a>
+		<p>外部链接</p>
+		<a href="http://www.qq.com" target="_blank">腾讯</a>  <br/>
+		<p>内部链接</p>
+		<a href="1.html" target="_blank">内部链接</a>
+		<p>空链接</p>
+		<a href="#">空链接</a>
+		<p>锚点链接</p>
+		<a href="#lin">名字</a>
+		定位到<h3 id="lin">名字介绍</h3>
+		
+		<!-- 注释标签 -->
+		空格标签&nbsp;哈哈
+		<!-- 小于号 -->&lt;
+		<!-- 大于号 -->&gt;
+		<!-- 版权 -->&copy;
+		
+		
+		
+		<!-- 表格标签 -->
+		<table align="center" border="1" cellpadding="30" cellspacing="0" width="500" heigth="100">
+			<thead>
+				<tr><th>姓名</th>  <th>年龄</th>  <th>性别</th></tr>
+			</thead>
+			
+			<tbody>
+				<tr><td colspan="2">齐泽龙</td>  <td></td>  <td>男</td></tr>
+			</tbody>
+			</table>
+		<!-- table表示大体的框架
+		 tr表示行
+		 td表示单元格
+		 th表示的是首行列表的重要信息 特点是加粗且居中-->
+		 
+		 
+		 
+		 
+		 <!-- 表格的属性
+		  <1>align (left,center,right)规定单元格中元素的对齐方式
+		  <2>border(1或"")规定单元格是否拥有边框
+		  <3>cellpadding(像素值)规定单元边沿与内容之间的空白
+		  <4>cellspacing(像素值)规定单元格之间的空白
+		  <5>width(像素值或百分比)规定表格的宽度-->
+		<!-- thead表示表格的头部
+			 tbody表示表格的尾部-->
+			 
+			 <!-- 跨行合并：rowspan="合并单元格的个数"
+				  跨列合并：colspan="合并单元格的列数"-->
+				  
+				  
+		<!-- 列表标签
+		 <1>无序列表
+		 tip:<ul>中只能嵌套<li>
+		 -->
+		 <ul>
+			 <li>齐泽龙</li>
+			 <li>齐泽龙</li>
+		 </ul>
+		
+		<!--<2>有序列表-->
+		<ol>
+			<li>齐泽龙</li>
+			<li>齐泽龙</li>
+		</ol>
+		
+		
+		<!-- <3>自定义列表 -->
+		<dl>
+			<dt>名词</dt>
+			<dd>名词的解释1</dd>
+			<dd>名词的解释2</dd>
+		</dl>
+		
+		
+		<!-- 表单标签
+		 用途：收集用户信息
+		 包含：
+		 (1)表单域
+		 (2)表单控件
+		 (3)提示信息
+		 -->
+		 <!-- 表单域<form>
+		  把范围内的表单信息提给服务器
+		  (1)action(url地址)：用于指定接受并处理表单数据的服务器程序的url地址
+		  (2)method(get/post):用于设置表单数据的提交方式
+		  (3)name(名称)：用于设置表单的名称-->
+		  <form action="demo.php" method="get" name="name1">
+			  
+		  </form>
+		  
+		  <!-- 表单控件 -->
+		  <!-- (1)input输入表单元素
+			(2)select下拉表单元素
+			(3)textarea文本域元素-->
+			<form action="xxx.php" method="get">
+				姓名：<input type="text" name="username" value="请输入姓名" maxlength="10"> <br/>
+				密码：<input type="password" name="pwd"><br/>
+				<!-- 单选按钮和复选框可以设置checked属性，当页面打开时就可以默认选中这个按钮 -->
+				<!-- label标签 当点击标签内的文本时，浏览器就会自动将焦点转化到对应的元素上 -->
+				婚姻状况：<label for="hy">已婚</label><input type="radio" name="hy" checked="checked" id="hy"> <label for="hy1">未婚</label><input type="radio" name="hy" id="hy1"><br/>
+				爱好：吃饭<input type="checkbox" name="hobby" checked="checked">睡觉<input type="checkbox" name="hobby"><br/>
+				<input type="submit" value="免费注册">
+				<input type="reset"><br/>
+				<!-- 普通按钮 -->
+				<input type="button" value="请输入验证码"><br/>
+				<!-- 文件域 上传文件 -->
+				<input type="file"><br/>
+			</form>
+			
+		  <!-- 
+		  type属性值包括：
+		(1)text：定义单行的输入字段，用户可以在其中输入文本
+		(2)password:定义密码字段
+		(3)button:定义可点击按钮
+		(4)checkbox:定义复选框
+		(5)file:定义输入字段和"浏览"按钮，供文件上传
+		(6)hidden:定义隐藏的输入字段
+		(7)image:定义图像形式的提交按钮
+		(8)radio:定义单选按钮
+		(9)reset:定义重置按钮
+		(10)submit:定义提交按钮
+		=========================
+		其他属性：
+		(1)name(由用户自定义):定义input元素的名称
+		(2)value(由用户自定义):规定input元素的值
+		(3)checked(checked):规定此input元素首次加载是应当被选中
+		(4)maxlength(正整数):规定输入字段中的字符的最大长度
+		-->
+		
+		
+		
+		
+		<!-- select下拉表单 
+			selected表示默认选中-->
+		<select>
+			<option>山东</option>
+			<option>陕西</option>
+			<option selected="selected">河北</option>
+		</select><br/>
+		
+		
+		<!-- textarea文本域元素
+		 cols="每行的字符数"
+		 rows="显示的行数"-->
+		<form>
+			今日反馈：
+			<textarea cols="50" rows="7">齐泽龙</textarea>
+		</form>
+	</body>
+</html>
